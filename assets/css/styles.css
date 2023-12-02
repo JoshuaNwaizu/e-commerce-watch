@@ -15,7 +15,7 @@
     --body-color: hsl(0, 0%, 99%);
     --container-color: #fff;
     --border-color: hsl(0, 0%, 94%);
-    --box-shadow: 0 8px 32px hsl(0, 0%, 10%, .1);
+    --box-shadow: 0 10px 4px hsla(0, 4%, 15%, .1);
 
     /*=============== Font type and typography ===============*/
     /*.5rem = 8px | 1rem = 16px ...*/
@@ -121,7 +121,7 @@ body.dark-theme {
     --body-color: hsl(0, 0%, 12%);
     --container-color: #000;
     --border-color: hsl(0, 0%, 20%);
-    --box-shadow: 0 8px 32px hsl(0, 0%, 70%);
+    --box-shadow: 0 10px 4px hsl(0, 2%, 65%);
     transition: .3s;
 
 }
@@ -236,6 +236,7 @@ body.dark-theme {
     display: inline-flex;
     align-items: center;
     column-gap: .25rem;
+
 }
 
 .nav__logo-icon {
@@ -294,6 +295,13 @@ body.dark-theme {
     top: .9rem;
     right: 1.25rem;
     cursor: pointer;
+    background-color: var(--container-color);
+    box-shadow: 0 4px 12px hsla(0, 0%, 20%, .1);
+    padding: .20rem;
+    color: var(--first-color);
+    z-index: var(--z-tooltip);
+    opacity: .8;
+
 }
 
 /*****************SHOW MENU******************/
@@ -772,12 +780,15 @@ body.dark-theme {
 
 .footer__container {
     row-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 3rem;
+    justify-content: center;
 }
 
 .footer__title {
-    font-size: var(--h2-font-size);
+    text-align: center;
+    font-size: var(--h3-font-size);;
     margin-bottom: var(--mb-1-5);
 }
 
@@ -790,6 +801,8 @@ body.dark-theme {
 
 .footer__link {
     color: var(--text-color);
+    text-align: center;
+    margin: a
 }
 
 .footer__link:hover {
@@ -798,8 +811,9 @@ body.dark-theme {
 }
 
 .footer__social {
-    display: flex;
-    column-gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 20px);
+    gap: 1rem;
 }
 
 .footer__social-link {
@@ -867,7 +881,8 @@ body.dark-theme {
     top: 0;
     right: -100%;
     padding: 3.5rem 2rem;
-    transition: .3s;
+    overflow-y: scroll;
+    transition: .3s; 
 }
 
 .cart__title-center {
@@ -879,11 +894,16 @@ body.dark-theme {
 
 .cart__close {
     font-size: 2rem;
-    color: var(--title-color);
+    color: var(--first-color);
     position: relative;
     top: 1.25rem;
     right: .9rem;
     cursor: pointer;
+    background-color: var(--container-color);
+    box-shadow: 0 4px 12px hsla(0, 0%, 20%, .1);
+    padding: .25rem;
+    z-index: var(--z-tooltip);
+    opacity: .8;
 }
 
 .cart__container {
@@ -969,10 +989,14 @@ body.dark-theme {
 
 /*****************BREAK POINTS*************************/
 /**********Smaller width*************/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 370px) {
     .container {
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
+    }
+
+    .nav__logo {
+        font-size: var(--small-font-size);
     }
 
     .home__img-bg {
@@ -980,7 +1004,7 @@ body.dark-theme {
     }
 
     .home__title {
-        font-size: var(--h1-font-size);
+        font-size: var(--h2-font-size);
     }
 
     .home__button {
@@ -1008,9 +1032,26 @@ body.dark-theme {
     .products__card {
         padding: 1rem;
     }
+    .footer__container {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+
+    }
 
     .footer__title {
         text-align: center;
+        font-size: var(--h3-font-size);
+    }
+    .footer__link {
+        text-align: left;
+        margin: auto;
+    }
+    .footer__social{
+        display: flex;
+        
+      
+        
     }
 }
 
@@ -1178,7 +1219,7 @@ body.dark-theme {
         width: 400px;
         height: 600px;
     }
-    
+
 
     .home__img {
         width: 620px;
@@ -1216,9 +1257,11 @@ body.dark-theme {
     .testimonial__square {
         height: 450px;
     }
+
     .products__container {
         padding-top: 2rem;
     }
+
     .testimonial__container {
         padding-bottom: 4rem;
     }
@@ -1230,25 +1273,46 @@ body.dark-theme {
         margin-left: auto;
         margin-right: auto;
     }
+
     .home__img-bg {
         width: 400px;
         height: 680px;
     }
+
     .story__container {
         column-gap: 13rem;
     }
+
     .story__container {
         padding-top: 3rem;
     }
+
     .story__img {
         left: 5rem;
         top: -5rem;
     }
+
     .testimonial__img {
         right: 5rem;
         top: 5rem;
     }
+
     .scrollup {
         right: 3rem;
+    }
+
+    .products__container {
+        grid-template-columns: repeat(3, 200px);
+        justify-content: center;
+        gap: 2.5rem;
+    }
+
+    .products__card {
+        padding: 3rem 0;
+
+    }
+
+    .products__img {
+        height: 155px;
     }
 }
