@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---=============== FAVICON ===============-->
+    <link rel="icon" href="../assets/img/favicon.png">
+
+    <!---=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!---=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!---=============== CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <!---=============== GOOGLE FONTS===============-->
+
+
+
+
+    <title>Watch Website</title>
+
+</head>
+
+<body>
+    <!---=============== Header ===============-->
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class='bx bxs-watch'></i>j-wrist
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link ">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">Featured</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">New</a>
+                    </li>
+
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+            <div class="nav__btns">
+                <!---=============== Theme change buttons ===============-->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class='bx bx-shopping-bag'></i>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!---=============== Cart ===============-->
+    <div class="cart" id="cart">
+        <i class='bx bx-x cart__close' id="cart-close"></i>
+        <h2 class="cart__title-center">My Cart</h2>
+
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/product11-removebg-preview.png" alt="" class="cart__img">
+                </div>
+                <div class="card__details">
+                    <h3 class="cart__title">ASTRAL HORIZON TIMEPIECE</h3>
+                    <span class="cart__price">$1500</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus'></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus'></i>
+                            </span>
+                        </div>
+                        <i class='bx bx-trash-alt cart__amount-trash'></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/product44-removebg-preview.png" alt="" class="cart__img">
+                </div>
+                <div class="card__details">
+                    <h3 class="cart__title">ECLIPSE SENTINEL</h3>
+                    <span class="cart__price">$1200</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus'></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus'></i>
+                            </span>
+                        </div>
+                        <i class='bx bx-trash-alt cart__amount-trash'></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/product33-removebg-preview.png" alt="" class="cart__img">
+                </div>
+                <div class="card__details">
+                    <h3 class="cart__title">CELESTIAL VOYAGER</h3>
+                    <span class="cart__price">$594</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus'></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus'></i>
+                            </span>
+                        </div>
+                        <i class='bx bx-trash-alt cart__amount-trash'></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/product22-removebg-preview.png" alt="" class="cart__img">
+                </div>
+                <div class="card__details">
+                    <h3 class="cart__title">QUANTUM CHRONOMASTER</h3>
+                    <span class="cart__price">$1125</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus'></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus'></i>
+                            </span>
+                        </div>
+                        <i class='bx bx-trash-alt cart__amount-trash'></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="cart__prices">
+            <span class="cart__prices-item">4 items</span>
+            <span class="cart__prices-total">$4419.00</span>
+        </div>
+
+    </div>
+
+    <!---=============== Main ===============-->
+    <main class="main">
+        <!---=============== HOME ===============-->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__img-bg">
+                    <img src="../assets/img/two_watches_home-removebg-preview.png" alt="" class="home__img">
+                </div>
+                <div class="home__social">
+                    <a href="https://twitter.com/JNS_dev" target="_blank" class="home__social-link">
+                        Facebook
+                    </a>
+                    <a href="https://twitter.com/JNS_dev" target="_blank" class="home__social-link">
+                        Twitter
+                    </a>
+                    <a href="https://twitter.com/JNS_dev" target="_blank" class="home__social-link">
+                        Instagram
+                    </a>
+                </div>
+                <div class="home__data">
+                    <h1 class="home__title">
+                        NEW WATCH <br> COLLETIONS B720
+                    </h1>
+                    <p class="home__description">
+                        Explore timeless elegance in our latest watches,
+                        seamlessly blending classic and modern design
+                        for your wrist.
+                    </p>
+                    <span class="home__price">$1230</span>
+                    <div class="home__btns">
+                        <a href="#" class="button button--grey button--small">
+                            Disover
+                        </a>
+                        <button class="button home__button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <!---=============== FEATURED ===============-->
+        </section>
+        <section class="featured section container" id="featured">
+            <h2 class="section__title">Featured</h2>
+            <div class="featured__container grid">
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+                    <img src="assets/img/watch-removebg-preview.png" alt="" class="featured__img">
+                    <div class="featured__data">
+                        <h3 class="featured__title">Jazz Master</h3>
+                        <span class="featured__price">$1054</span>
+                    </div>
+                    <button class="button featured__button">ADD TO CART</button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+                    <img src="assets/img/watch2-removebg-preview.png" alt="" class="featured__img">
+                    <div class="featured__data">
+                        <h3 class="featured__title">Patek Philippe</h3>
+                        <span class="featured__price">$250</span>
+                    </div>
+                    <button class="button featured__button">ADD TO CART</button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+                    <img src="assets/img/watch3-removebg-preview.png" alt="" class="featured__img">
+                    <div class="featured__data">
+                        <h3 class="featured__title">Cartier</h3>
+                        <span class="featured__price">$840</span>
+                    </div>
+                    <button class="button featured__button">ADD TO CART</button>
+                </article>
+            </div>
+
+        </section>
+        <!---=============== STORY ===============-->
+        <section class="story section container">
+            <div class="story__container grid">
+                <div class="story__data">
+                    <h2 class="section__title story__section-title">Our Story</h2>
+                    <h1 class="story__title">
+                        Timepiece Marvel of the Year.
+                    </h1>
+                    <p class="story__description">
+                        Check out the coolest watch of the year – a true winner!
+                        Discover the latest in timekeeping excellence with this amazing timepiece.
+                    </p>
+                    <a href="" class="button button--small">Discover</a>
+                </div>
+                <div class="story__images">
+                    <img src="./assets/img/story image.jpg" alt="" class="story__img">
+                    <div class="story__square"></div>
+                </div>
+
+            </div>
+
+        </section>
+        <!---=============== PRODUCTS ===============-->
+        <section class="products section container" id="products">
+            <h2 class="section__title">Products</h2>
+            <div class="products__container grid">
+                <article class="products__card">
+                    <img src="assets/img/product11-removebg-preview.png" alt="" class="product__img">
+                    <h3 class="products__title">Astral Horizon Timepiece
+                    </h3>
+                    <span class="products__price">$1500</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="assets/img/product22-removebg-preview.png" alt="" class="product__img">
+                    <h3 class="products__title">Quantum Chronomaster</h3>
+                    <span class="products__price">$1125</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/product33-removebg-preview.png" alt="" class="product__img">
+                    <h3 class="products__title">Celestial Voyager
+                    </h3>
+                    <span class="products__price">$594</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/product44-removebg-preview.png" alt="" class="product__img">
+                    <h3 class="products__title">Eclipse Sentinel </h3>
+                    <span class="products__price">$1200</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/product5-removebg-preview.png" alt="" class="product__img">
+                    <h3 class="products__title">Eclipse Sentinel </h3>
+                    <span class="products__price">$545</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/product6-removebg-preview.png" alt="" class="product__img">
+                    <h3 class="products__title">Enigma Mirage Timepiece</h3>
+                    <span class="products__price">$364</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+            </div>
+        </section>
+        <!---=============== TESTIMONIAL ===============-->
+
+        <section class="testimonial section container">
+            <div class="testimonial__container grid">
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left'></i>
+                            </div>
+                            <p class="testimonial__description">
+                                Check out the coolest watch of the year – a true winner!
+                                Discover the latest in timekeeping excellence with this amazing timepiece.
+                                Watch of the Year, an inspiration in timekeeping excellence
+                            </p>
+                            <h3 class="testimonial__date">March 27, 2021</h3>
+                            <div class="testimonial__perfill">
+                                <img src="assets/img/testimonial4.jpg" alt="" class="testmonial__perfil-img">
+                                <div class="testimonial__perfill-data">
+                                    <span class="testimonial__perfill-name">Mike Anthony</span>
+                                    <span class="testimonial__perfill-detail">Director of a company</span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left'></i>
+                            </div>
+                            <p class="testimonial__description">
+                                Check out the coolest watch of the year – a true winner!
+                                Discover the latest in timekeeping excellence with this amazing timepiece.
+                                Watch of the Year, an inspiration in timekeeping excellence
+                            </p>
+                            <h3 class="testimonial__date">March 27, 2021</h3>
+                            <div class="testimonial__perfill">
+                                <img src="assets/img/testimonial5.jpg" alt="" class="testmonial__perfil-img">
+                                <div class="testimonial__perfill-data">
+                                    <span class="testimonial__perfill-name">Vadan Shumar</span>
+                                    <span class="testimonial__perfill-detail">Director of a company</span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left'></i>
+                            </div>
+                            <p class="testimonial__description">
+                                Check out the coolest watch of the year – a true winner!
+                                Discover the latest in timekeeping excellence with this amazing timepiece.
+                                Watch of the Year, an inspiration in timekeeping excellence
+                            </p>
+                            <h3 class="testimonial__date">March 27, 2021</h3>
+                            <div class="testimonial__perfill">
+                                <img src="assets/img/testimonial6.jpg" alt="" class="testmonial__perfil-img">
+                                <div class="testimonial__perfill-data">
+                                    <span class="testimonial__perfill-name">Josh Wong</span>
+                                    <span class="testimonial__perfill-detail">Director of a company</span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left'></i>
+                            </div>
+                            <p class="testimonial__description">
+                                Check out the coolest watch of the year – a true winner!
+                                Discover the latest in timekeeping excellence with this amazing timepiece.
+                                Watch of the Year, an inspiration in timekeeping excellence
+                            </p>
+                            <h3 class="testimonial__date">March 27, 2021</h3>
+                            <div class="testimonial__perfill">
+                                <img src="assets/img/testimonial1.jpg" alt="" class="testmonial__perfil-img">
+                                <div class="testimonial__perfill-data">
+                                    <span class="testimonial__perfill-name">George Winter</span>
+                                    <span class="testimonial__perfill-detail">Director of a company</span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left'></i>
+                            </div>
+                            <p class="testimonial__description">
+                                Check out the coolest watch of the year – a true winner!
+                                Discover the latest in timekeeping excellence with this amazing timepiece.
+                                Watch of the Year, an inspiration in timekeeping excellence
+                            </p>
+                            <h3 class="testimonial__date">March 27, 2021</h3>
+                            <div class="testimonial__perfill">
+                                <img src="assets/img/testimonial2.jpg" alt="" class="testmonial__perfil-img">
+                                <div class="testimonial__perfill-data">
+                                    <span class="testimonial__perfill-name">Sarah Wilson</span>
+                                    <span class="testimonial__perfill-detail">Director of a company</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next "><i class='bx bx-right-arrow-alt'></i></div>
+                    <div class="swiper-button-prev "><i class='bx bx-left-arrow-alt'></i></div>
+                </div>
+                <div class="testimonial__images">
+                    <div class="testimonial__square"></div>
+                    <img src="assets/img/testimonial.png" alt="" class="testimonial__img">
+                </div>
+            </div>
+        </section>
+        <!---=============== NEW ===============-->
+        <section class="new section container" id="new">
+            <h3 class="section__title">New Arrivals</h3>
+            <div class="new__container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+                            <img src="assets/img/new1.png" alt="" class="new__img">
+                            <div class="new__data">
+                                <h3 class="new__title">Rolex Daytona</h3>
+                                <span class="new__price">$949</span>
+                            </div>
+                            <button class="button new__button">ADD TO CART</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+                            <img src="assets/img/new2.png" alt="" class="new__img">
+                            <div class="new__data">
+                                <h3 class="new__title">Patek Nautilus</h3>
+                                <span class="new__price">$129</span>
+                            </div>
+                            <button class="button new__button">ADD TO CART</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+                            <img src="assets/img/new3.png" alt="" class="new__img">
+                            <div class="new__data">
+                                <h3 class="new__title">Patek Nautilus</h3>
+                                <span class="new__price">$700</span>
+                            </div>
+                            <button class="button new__button">ADD TO CART</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+                            <img src="assets/img/new4.png" alt="" class="new__img">
+                            <div class="new__data">
+                                <h3 class="new__title">Hublot Big Bang Unic</h3>
+                                <span class="new__price">$350</span>
+                            </div>
+                            <button class="button new__button">ADD TO CART</button>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!---=============== NEWSLETTER ===============-->
+        <section class="newsletter section container" id="newsletter">
+            <div class="newsletter__bg grid">
+                <div>
+                    <h2 class="newsletter__title">
+                        Subscribe to <br> our newsletter
+                    </h2>
+                    <p class="newsletter__description">
+                        Unlock a world of elegance with our newsletter.
+                        Dive into timeless designs,
+                        exclusive releases, and horological insights.
+                        Subscribe for wristwear wonders delivered to your inbox.
+                    </p>
+                </div>
+                <form action="" class="newsletter__subscribe">
+                    <input type="email" placeholder="Enter your email" class="newsletter__input">
+                    <button class="button">
+                        SUBSCRIBE
+                    </button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+    <!---=============== Footer ===============-->
+    <footer class="footer section">
+        <h2 class="section__title"></h2>
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title ">Our Infomation</h3>
+
+                <ul class="footer__list">
+                    <li>1245 - Nigeria</li>
+                    <li>Lagos 44332</li>
+                    <li>123-456-789</li>
+
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">About Us</h3>
+                <ul class="footer__links">
+                    <li>
+                        <a href="" class="footer__link">Support Center</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">Customer support</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">Copy Right</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Product</h3>
+                <ul class="footer__links">
+                    <li>
+                        <a href="" class="footer__link">Road Bikes</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">Hoddies</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">Electricals</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">Accessories</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+                <ul class="footer__social">
+                    <a href="" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                    <a href="" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <span class="footer__copy">J-WRIST. All Rights Reserved. JNS ©</span>
+    </footer>
+    <!---===============SCROLL UP===============-->
+    <a href="" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup-icon'></i>
+    </a>
+    <!---===============SWIPER JS===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!---===============JS===============-->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
