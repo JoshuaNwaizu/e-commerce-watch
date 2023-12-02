@@ -1176,14 +1176,15 @@ body.dark-theme {
 
     .home__img-bg {
         width: 400px;
-        height: 680px;
+        height: 600px;
     }
+    
 
     .home__img {
         width: 620px;
-        height: 500px;
+        height: 400px;
         position: relative;
-        top: -4rem;
+        top: -7rem;
     }
 
     .home__social {
@@ -1228,6 +1229,10 @@ body.dark-theme {
     .container {
         margin-left: auto;
         margin-right: auto;
+    }
+    .home__img-bg {
+        width: 400px;
+        height: 680px;
     }
     .story__container {
         column-gap: 13rem;
