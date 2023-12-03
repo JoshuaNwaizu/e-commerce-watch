@@ -329,11 +329,15 @@ body.dark-theme {
 
 .home__img {
     width: 248px;
+    position: relative;
+    top: -3rem;
     height: 270px;
 }
 
 .home__img-bg {
     background-color: var(--first-color);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
     width: 258px;
     height: 430px;
     padding-bottom: 2rem;
@@ -1005,6 +1009,9 @@ body.dark-theme {
     .home__img-bg {
         width: 220px;
     }
+    .home__img-bg {
+        position: relative;
+    }
 
     .home__title {
         font-size: var(--h2-font-size);
@@ -1067,6 +1074,7 @@ body.dark-theme {
     }
 
     .home__img {
+        position: relative;
         width: 400px;
         height: 350px;
     }
