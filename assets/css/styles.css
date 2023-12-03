@@ -1126,7 +1126,7 @@ body.dark-theme {
     .nav__list {
         flex-direction: row;
         column-gap: 2.5rem;
-        margin-left: -1rem;
+        margin-left: -.5rem;
     }
 
     .nav__span {
