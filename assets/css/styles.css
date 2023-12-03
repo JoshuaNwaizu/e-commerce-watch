@@ -797,6 +797,7 @@ body.dark-theme {
     display: flex;
     flex-direction: column;
     row-gap: .75rem;
+    align-items: left;
 }
 
 .footer__link {
@@ -813,7 +814,8 @@ body.dark-theme {
 .footer__social {
     display: grid;
     grid-template-columns: repeat(2, 20px);
-    gap: 1rem;
+    gap: 2rem;
+    margin-left: .8rem;
 }
 
 .footer__social-link {
